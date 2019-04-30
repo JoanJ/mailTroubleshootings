@@ -14,7 +14,7 @@ function GetSpf($entrada,$added) {
             // An SPF record can be empty (no mechanism)
             if ($txt == 'v=spf1' || stripos($txt, 'v=spf1 ') === 0) {
                 $spfRecords[] = $txt;
-                $isEntry = strpos($txt, 'launchmetrics');
+                $isEntry = strpos($txt, 'xxxxx');
                 }
             }
         }
@@ -30,7 +30,7 @@ function GetSpf($entrada,$added) {
 
 function spfString($stringSpf){
     
-    $spfentryL = " include:_shortspf.launchmetrics.com ";
+    $spfentryL = " include:_shortspf.xxxxx.com ";
     //afegim entrada spf de launchmetrics
     $llargada = strlen($stringSpf);
     $llargada = $llargada - 4;
